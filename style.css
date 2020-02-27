@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #c8d6e5;
+    font-family: 'EB Garamond', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+}
+
+.cajon {
+    width: 100%;
+    margin: auto;
+}
+
+#header {
+    padding: 40px 0;
+}
+
+header .barra-nav {
+    background: #576574;
+    text-align: center;
+    margin-bottom: 40px;}
+
+header .barra-nav p {
+    color: white;}
+
+header .categorias {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .8em 1.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #8395a7;
+    background: linear-gradient(#8395a7, #8395a7);
+}
+
+header .categorias a {
+    color: white;
+    margin: 20px 0 15px 0;
+    padding: .7em;
+    float: left;
+    list-style: none;
+    border-radius: .5em;
+    box-shadow: 0 1px 0 rgba(55, 6, 168, 0.2), 0 2px 1px rgba(0,0,0,.8) inset; 
+    font-size: 18px;
+    font-weight: 700;}
+
+header .categorias a:hover {
+    padding-bottom: 12px;
+    outline: 0;
+    background: linear-gradient(#222f3e, #222f3e);}
+
+.contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;}
+
+footer .redes-sociales {
+    display: flex;
+    margin-left: 224px;
+    position: relative;
+    bottom: 0;
+    border-top: 2px solid #8395a7;}
+
+footer .redes-sociales a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+    color: white;
+    margin: 20px;
+    text-align: center;
+    border-radius: 100px;
+    transition: .3s ease all;
+}
+
+footer .redes-sociales .twitter {
+    background: black;
+}
+
+footer .redes-sociales .facebook {
+    background: black;
+}
+
+footer .redes-sociales .instagram {
+    background: black;
+}
+
+footer .redes-sociales .linkedin {
+    background: black;
+}
+
+footer .redes-sociales a i {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+footer .redes-sociales a i {
+    font-size: 20px;
+    line-height: 60px;
+}
+
+footer .contenedor-icono:hover a {
+    animation: icono .5s ease;
+}
+
+@keyframes icono {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }}
+
+form{
+    background-color: white;
+    color: #999;
+    font-size: 0.8em;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+input, textarea{
+    outline: none;
+    border: 0;
+    width: 280px;
+}
+
+.field {
+    border: solid 1px #ccc;
+    padding: 10px;}
+
+.field:focus{
+    border-color: #18a383;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    box-shadow: 0 1px 1px rgba (0,0,0,0.3);}
+
+.btn-green {
+    color: white;
+    background-color: #3cc93f;}
+
+.btn-green:hover{
+    background-color: #37b839;}
+.btn-green:active{
+    background-color: #29962a;}
+
+.parrafo{
+    width: 540px;
+    height: 440px;
+    padding: 20px 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    background: white;
+    box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.parrafo img{
+    width: 310px;
+    border-radius: 5px;
+    float: left ;
+    margin-right: 15px;}
