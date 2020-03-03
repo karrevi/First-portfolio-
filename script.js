@@ -27,7 +27,23 @@ document.querySelector('.aboutButton').addEventListener('click',()=>{
     main.innerHTML=about;
 })
 
-const skills = ``
+const skills = `<div class="Skills">
+<h1>My Skills</h1>
+<li>
+    <h3>Html</h3><span class="bar"><span class="html"></span></span>
+</li>
+<li>
+    <h3>Css</h3><span class="bar"><span class="css"></span></span>
+</li>
+<li>
+    <h3>JavaScript</h3><span class="bar"><span class="javascript"></span></span>
+</li>
+<li>
+    <h3>PHP</h3><span class="bar"><span class="php"></span></span>
+</li>
+<li>
+    <h3>MySql</h3><span class="bar"><span class="mysql"></span></span>
+</li> </div>`
 
 document.querySelector('.skillsButton').addEventListener('click',()=>{
     main.innerHTML=skills;

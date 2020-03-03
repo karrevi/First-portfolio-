@@ -1,6 +1,8 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    padding: 0;
 }
 
 body {
@@ -9,11 +11,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: initial;
     background-repeat: no-repeat;
+    min-width: 250px;
 }
+
 a {
     text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
 }
 
 .cajon {
@@ -28,14 +38,15 @@ a {
 header .barra-nav {
     background: #576574;
     text-align: center;
-    margin-bottom: 40px;}
+}
 
 header .barra-nav p {
-    color: white;}
+    color: white;
+    font-family: 'Bubblegum Sans';
+}
 
 header .categorias {
     width: 100%;
-    margin: 30px auto;
     display: flex;
     justify-content: space-evenly;
     font-size: 11px;
@@ -66,15 +77,16 @@ header .categorias a:hover {
     background: linear-gradient(#222f3e, #222f3e);}
 
 .contenedor {
-    width: 90%;
-    max-width: 800px;
-    margin: auto;}
+    width: 100%;
+    margin: auto;
+    /* position: fixed; */
+    bottom: 0;
+}
 
 footer .redes-sociales {
+    width: 100%;
     display: flex;
-    margin-left: 224px;
-    position: relative;
-    bottom: 0;
+    justify-content: center;
     border-top: 2px solid #8395a7;}
 
 footer .redes-sociales a {
@@ -174,7 +186,7 @@ input, textarea{
     background-color: #29962a;}
 
 .parrafo{
-    width: 540px;
+    width: 90vw;
     height: 440px;
     padding: 20px 20px;
     font-size: 15px;
@@ -190,3 +202,100 @@ input, textarea{
     border-radius: 5px;
     float: left ;
     margin-right: 15px;}
+
+@media screen and (max-width: 750px) {
+        .categorias {flex-direction: column;
+            justify-content: flex-start; }
+}
+
+.Skills {
+    width: 500px;
+    margin: 60px auto;
+    color: black;
+}
+
+.Skills li {
+    margin: 20px 0;
+}
+
+.bar {
+    display: block;
+    border: 2px solid hsl(60, 1%, 32%);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 0 10px white;
+}
+.bar span{
+    display: inline-block;
+    height: 11px;
+    background-color:#8395a7b3;
+    border-radius: 6px;
+}
+.box span {
+    /* height: 2px; */
+    float: left;
+    background: aqua;
+}
+
+.html {
+    width: 80%;
+    animation: html 4s;
+}
+
+.css {
+    width: 60%;
+    animation: css 4s;
+}
+.javascript {
+    width: 55%;
+    animation: javascript 4s;
+}
+.php {
+    width: 40%;
+    animation: php 4s;
+}
+.mysql {
+    width: 20%;
+    animation: mysql 4s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes mysql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
