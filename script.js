@@ -42,6 +42,7 @@ const skills = `<div class="Skills">
     <h3>PHP</h3><span class="bar"><span class="php"></span></span>
 </li>
 <li>
+
     <h3>MySql</h3><span class="bar"><span class="mysql"></span></span>
 </li> </div>`
 
